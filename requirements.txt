@@ -1,4 +1,5 @@
 mkdocs-material
 mkdocs-static-i18n
+mkdocs-glightbox
 mkdocs-awesome-pages-plugin
 mkdocs-git-revision-date-localized-plugin
