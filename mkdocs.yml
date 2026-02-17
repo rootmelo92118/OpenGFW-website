@@ -70,11 +70,11 @@ extra:
     - icon: fontawesome/brands/telegram
       link: https://t.me/OpGFW
     - icon: fontawesome/brands/github
-      link: https://github.com/apernet/OpenGFW
+      link: https://github.com/rootmelo92118/OpenGFW
 
 copyright: Copyright &copy; 2020 - 2024 The Hysteria Project
 
-repo_url: https://github.com/apernet/OpenGFW
+repo_url: https://github.com/rootmelo92118/OpenGFW
 
 nav:
   - Home: index.md
@@ -83,7 +83,7 @@ nav:
       - Rules: docs/rules.md
       - Analyzers: docs/analyzers.md
       - Functions: docs/functions.md
-  - GitHub: https://github.com/apernet/OpenGFW
+  - GitHub: https://github.com/rootmelo92118/OpenGFW
 
 plugins:
   - search
@@ -106,4 +106,4 @@ plugins:
                 - 规则文件: docs/rules.md
                 - 分析器: docs/analyzers.md
                 - 内置函数: docs/functions.md
-            - GitHub: https://github.com/apernet/OpenGFW
+            - GitHub: https://github.com/rootmelo92118/OpenGFW
