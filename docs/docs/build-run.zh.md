@@ -48,6 +48,10 @@ io:
   rcvBuf: 4194304
   sndBuf: 4194304
   local: true # (1)!
+  input: true
+  output: true
+  forward: true
+  docker: true
   rst: false # (2)!
 
 workers:
@@ -59,7 +63,7 @@ workers:
   udpMaxStreams: 4096
 
 # 指定的 geoip/geosite 档案路径
-# 如果未设置，将自动从 https://github.com/Loyalsoldier/v2ray-rules-dat 下载
+# 如果未设置，将自动从 https://github.com/rootmelo92118/v2ray-rules-dat 下载
 # ruleset:
 #   geoip: geoip.dat
 #   geosite: geosite.dat
@@ -70,10 +74,11 @@ replay:
 
 1. 如果想在 FORWARD 链上运行（如在路由器上），设置为 false
 2. 如果想为被阻断的 TCP 连接发送 RST，设置为 true。**仅在 local=false 时有效**
-3. 建议不超过 CPU 核心数
-4. 一个连接多久没有数据传输后会被认为是死连接。TCP 重组的连接池会以每分钟一次的频率清理死连接
-5. 如果希望以实时速度（pcap 文件中的时间戳）回放 pcap 中的数据包（而不是以能处理的最快速度），设置为 true
-6. nfqueue 队列序号
-7. nftables 表名
-8. 放行连接的 connmark 值
-9. 阻断连接的 connmark 值
+3. 可以单独控制input、output、forward、docker。四选项皆未启用local选项才生效。
+4. 建议不超过 CPU 核心数
+5. 一个连接多久没有数据传输后会被认为是死连接。TCP 重组的连接池会以每分钟一次的频率清理死连接
+6. 如果希望以实时速度（pcap 文件中的时间戳）回放 pcap 中的数据包（而不是以能处理的最快速度），设置为 true
+7. nfqueue 队列序号
+8. nftables 表名
+9. 放行连接的 connmark 值
+10. 阻断连接的 connmark 值
