@@ -81,4 +81,7 @@ replay:
 7. nftables 表名
 8. 放行连接的 connmark 值
 9. 阻断连接的 connmark 值
-10. 可以单独控制input、output、forward、docker。四选项皆未启用local选项才生效。
+10. 启用 INPUT 链流量处理。四选项（input/output/forward/docker）皆未启用时，local 选项才生效
+11. 启用 OUTPUT 链流量处理。四选项（input/output/forward/docker）皆未启用时，local 选项才生效
+12. 启用 FORWARD 链流量处理。四选项（input/output/forward/docker）皆未启用时，local 选项才生效
+13. 启用 Docker 网络流量处理。四选项（input/output/forward/docker）皆未启用时，local 选项才生效
