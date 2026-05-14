@@ -83,7 +83,7 @@ nav:
       - Rules: docs/rules.md
       - Analyzers: docs/analyzers.md
       - Functions: docs/functions.md
-  - GitHub: https://github.com/rootmelo92118/OpenGFW
+  - GitHub: https://github.com/rootmelo92118/OpenGFW-website
 
 plugins:
   - search
