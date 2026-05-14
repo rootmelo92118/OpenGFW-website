@@ -18,6 +18,7 @@ title: 分析器
 {
   "id": 123456,
   "proto": "tcp", // tcp, udp
+  "chain": "input", // input, output, forward, ""
   "ip": {
     "src": "123.123.123.123",
     "dst": "7.8.9.0"
