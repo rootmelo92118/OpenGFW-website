@@ -48,6 +48,10 @@ io:
   rcvBuf: 4194304
   sndBuf: 4194304
   local: true # (1)!
+  input: true
+  output: true
+  forward: true
+  docker: true
   rst: false # (2)!
 
 workers:
@@ -59,7 +63,7 @@ workers:
   udpMaxStreams: 4096
 
 # The path to load specific local geoip/geosite db files.
-# If not set, they will be automatically downloaded from https://github.com/Loyalsoldier/v2ray-rules-dat
+# If not set, they will be automatically downloaded from https://github.com/rootmelo92118/v2ray-rules-dat
 # ruleset:
 #   geoip: geoip.dat
 #   geosite: geosite.dat
