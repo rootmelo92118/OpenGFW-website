@@ -49,9 +49,9 @@ io:
   sndBuf: 4194304
   local: true # (1)!
   input: true # (10)!
-  output: true # (10)!
-  forward: true # (10)!
-  docker: true # (10)!
+  output: true # (11)!
+  forward: true # (12)!
+  docker: true # (13)!
   rst: false # (2)!
 
 workers:
@@ -81,4 +81,7 @@ replay:
 7. nftables table name
 8. connmark value for accepted connections
 9. connmark value for dropped connections
-10.  Input, output, forward, and docker can be controlled separately. The local option only takes effect when none of the four options is enabled.
+10.  Enable processing of INPUT chain traffic. The `local` option only takes effect when none of the four options (input/output/forward/docker) is enabled.
+11.  Enable processing of OUTPUT chain traffic. The `local` option only takes effect when none of the four options (input/output/forward/docker) is enabled.
+12.  Enable processing of FORWARD chain traffic. The `local` option only takes effect when none of the four options (input/output/forward/docker) is enabled.
+13.  Enable processing of Docker network traffic. The `local` option only takes effect when none of the four options (input/output/forward/docker) is enabled.
