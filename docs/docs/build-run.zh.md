@@ -48,6 +48,10 @@ io:
   rcvBuf: 4194304
   sndBuf: 4194304
   local: true # (1)!
+  input: true
+  output: true
+  forward: true
+  docker: true
   rst: false # (2)!
 
 workers:
